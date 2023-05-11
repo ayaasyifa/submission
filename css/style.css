@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Quicksand:wght@500;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #354277;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header.navbar-container .jumbotron {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  display: inline;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-block: 1rem;
+  z-index: 999;
+}
+.jumbotron {
+  padding: 60px;
+  text-align: center;
+  font-size: 20px;
+  color: #354277;
+}
+header.navbar-container .logo {
+  color: #354277;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  top: ;
+}
+
+header.navbar-container .logo img {
+  width: 50px;
+}
+
+header.navbar-container .nav-list ul {
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  background-color: #fefdfc;
+  text-decoration:none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #354277;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: #96b6eb;
+  color: white;
+}
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 1rem 5rem;
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+main .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+main .content .content-image {
+  flex: 1;
+  display: flex;
+}
+ 
+main .content .content-image img {
+  margin: auto;
+  min-width: 250px;
+  width: 350px;
+}
+
+main .content .content-description {
+  flex: 1 1;
+}
+
+main .content .content-description .title {
+  color: #354277;
+  font-size: 3.5rem;
+  margin-block: 1rem;
+}
+
+main .content .content-description p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+}
+
+main .content .content-description button {
+  position: relative;
+  padding: 0.8rem 2.5rem;
+  margin-block-start: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+
+  border: 10px solid transparent;
+  border-radius: 999px;
+  background-color: #96b6eb;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+main .content .content-description button:hover {
+  border: 3px solid #96b6eb;
+  color: #96b6eb;
+  background-color: transparent;
+}
+
+.cards {
+  width: 100%;
+  max-width: 820px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.card {
+  margin-right: 25px;
+  background-color: #fff;
+  width: 29.5%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+  transition: cubic-bezier(0.175, 0.885, 0, 1);
+}
+
+.card-img {
+  width: 100%;
+  height: 260px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-img-hover {
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  height: 260px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  top: 0;
+  transition: 0.2s all ease-out;
+}
+
+.card:hover .card-img-hover {
+  height: 100%;
+  opacity: 0.3;
+}
+
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1, 1.1);
+}
+
+.card-info {
+  z-index: 2;
+  background-color: #fff;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+}
+
+.card-category {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-style: 500;
+  color: #868686;
+}
+
+.card-title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.card-by {
+  font-size: 12px;
+  font-family: "Robot", sans-serif;
+  font-weight: 500;
+}
+
+.card-writer {
+  font-weight: 600;
+  text-decoration: none;
+  color: #96b6eb;
+}
+
+.card:hover .card-info {
+  background-color: transparent;
+  position: relative;
+}
+
+.card-info-hover {
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+
+.card:hover .card-info-hover {
+  opacity: 1;
+}
+main aside {
+  padding: 16px 24px 24px 24px;
+  background-color: #e6eff9;
+  display: flex;
+  inset-block: 0;
+  inset-inline-end: 0;
+
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+footer {
+  background: #fefdfc;
+  color: #96b6eb;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px 30px;
+  position: relative;
+  top:0%;
+}
+footer .container {
+  position: relative;
+}
+#footer .social-links {
+  margin: 100px 100px 40px 0;
+}
+
+
+@media screen and (max-width: 700px) {
+  body{
+    background-size: auto;
+  }
+  header.navbar-container {
+    flex-direction: column;
+  }
+  header.navbar-container .blog {
+    padding: 1rem 1rem ;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem 1rem ;
+  }
+  main aside{
+    padding: 1rem 1rem;
+  }
+
+
+  main .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main .content .content-description .title {
+    font-size: 3rem;
+  }
+
+  main .content .content-description p {
+    font-size: 1rem;
+  }
+
+  main .content .content-image {
+    order: -1;
+  }
+  
+  .card {
+    width: 20em;
+    display: block;
+    margin: 1em;
+  }
+
+  body {
+    display: flex;
+    align-items: flex-start;
+  }
+  footer {
+    align-items: center;
+  }
+}
